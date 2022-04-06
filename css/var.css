@@ -1,0 +1,79 @@
+#rightmenu {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 10rem;
+  height: fit-content;
+  padding: 0 0.3rem;
+  background-color: var(--card-bg);
+  box-shadow: var(--card-box-shadow);
+  border: var(--card-border);
+  border-radius: 8px;
+  z-index: 102;
+  transition: all 0.3s;
+}
+#rightmenu:hover {
+  border-color: var(--main);
+  box-shadow: var(--main-shadow);
+}
+#rightmenu .rightmenu-group {
+  padding: 0.4rem 0.35rem;
+}
+#rightmenu .rightmenu-group:not(:nth-last-child(1)) {
+  border-bottom: 2px dashed var(--font-color);
+}
+#rightmenu .rightmenu-small {
+  display: flex;
+  justify-content: space-between;
+}
+#rightmenu .rightmenu-small .rightmenu-item {
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#rightmenu .rightmenu-small .rightmenu-item:hover {
+  color: var(--white);
+  background-color: var(--main);
+  box-shadow: var(--main-shadow);
+}
+#rightmenu .rightmenu-small .rightmenu-item i {
+  display: inline-block;
+  text-align: center;
+  padding: 0 8px;
+}
+#rightmenu .rightmenu-line .rightmenu-item {
+  color: var(--font-color);
+  display: flex;
+  padding: 0.3rem 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#rightmenu .rightmenu-line .rightmenu-item:hover {
+  color: var(--white);
+  background-color: var(--main);
+  box-shadow: var(--main-shadow);
+}
+#rightmenu .rightmenu-line .rightmenu-item i {
+  width: 3rem;
+  display: inline-block;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0 8px;
+  margin: 0 auto;
+}
+#rightmenu .rightmenu-line .rightmenu-item span {
+  width: 6rem;
+  line-height: 1.5;
+}
+#rightmenu-mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 101;
+  display: none;
+  background: rgba(0,0,0,0.6);
+}
